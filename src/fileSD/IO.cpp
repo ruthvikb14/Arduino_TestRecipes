@@ -12,7 +12,6 @@ void IO::initSerial(){
 	while (!Serial) {
 		; // wait for serial port to connect. Needed for native USB port only
 	}
-	Serial.println(SD_CS);
 	if (!SD.begin(SD_CS)) {
 		Serial.println("SD Card not found");
 	}

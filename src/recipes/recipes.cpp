@@ -221,7 +221,7 @@ int recipes::LoadRecipes()
 					// The recipe description is on the same line in col[2]:
 					recipe::count++;//recipeNumber initialized at -1.
 					strncpy(recipes_array[recipe::count].name,col[2],strlen(col[2])+1);
-					myIO->serialPrintln(recipes_array[recipe::count].name);
+					//myIO->serialPrintln(recipes_array[recipe::count].name);
 					bool recipeEnd=false;
 					//Keep reading until you find EndRecipe
 					while (readOneLine(line) && not recipeEnd && not error){

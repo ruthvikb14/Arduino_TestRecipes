@@ -26,7 +26,7 @@ int main(){
   /* Read Recipes from file */
   int numRecipes= myrecipes->LoadRecipes();
   myIO->serialPrint((char*)"Number of recipes found : ");
-  myIO->serialPrintln(numRecipes);
+  myIO->serialPrintln(numRecipes+1);
   myIO->recipeFileclose();
 }
 
